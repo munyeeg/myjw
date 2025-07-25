@@ -170,11 +170,17 @@ export default function RSVP() {
       }
 
       setIsEditing(false);
-      checkExisting();
 
-      if (isAttending && existingRsvp?.animated === "FALSE") {
+      console.log(existingRsvp);
+      console.log(isAttending);
+      console.log(existingRsvp?.animated);
+      if (
+        isAttending &&
+        (existingRsvp?.animated === "FALSE" || !existingRsvp?.animated)
+      ) {
         showConfetti();
       }
+      checkExisting();
     } catch (error) {
       console.error("Error submitting RSVP:", error);
     } finally {
@@ -214,7 +220,12 @@ export default function RSVP() {
               )}
             >
               RSVP
-              <div className={cn("text-[calc(2vw)]  pt-[calc(1.5vw)] tracking-[calc(1.5vw)] md:text-[14px] md:pt-[10px] md:tracking-[12px] pb-[calc(1vw)] md:pb-[45px]", catchy.className)}>
+              <div
+                className={cn(
+                  "text-[calc(2vw)]  pt-[calc(1.5vw)] tracking-[calc(1.5vw)] md:text-[14px] md:pt-[10px] md:tracking-[12px] pb-[calc(1vw)] md:pb-[45px]",
+                  catchy.className
+                )}
+              >
                 BY 30 SEPTEMBER, 2025
               </div>
             </div>
