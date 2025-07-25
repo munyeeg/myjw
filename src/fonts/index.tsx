@@ -53,7 +53,7 @@ export const moon = localFont({
 export const inkfree = localFont({
   src: [
     {
-      path: "./inkfree.ttf",
+      path: "./Inkfree.ttf",
       weight: "400",
       style: "normal",
     },
