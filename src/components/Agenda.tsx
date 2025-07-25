@@ -56,7 +56,7 @@ export default function Agenda() {
               <div className="text-[calc(2.8vw)] md:text-[22px]">DINNER</div>
             </div>
           </div>
-          <div className="text-[calc(2.1vw)] md:text-[15px] text-center tracking-[5px] pt-[calc(2vw)] md:pt-[20px] text-[#5b5b5b]">
+          <div className="text-[calc(2.1vw)] md:text-[15px] text-center tracking-[calc(0.8vw)] md:tracking-[5px] pt-[calc(2vw)] md:pt-[20px] text-[#5b5b5b]">
             **Limited Seat. First Come First Serve.
           </div>
         </div>
