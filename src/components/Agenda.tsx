@@ -31,13 +31,7 @@ export default function Agenda() {
                 height={50}
                 className="h-[calc(8vw)] md:h-[50px] object-fit w-fit"
               />
-              <div className="text-[calc(2.8vw)] md:text-[22px]">ROM</div>
-              <div className="text-[calc(2.1vw)] md:text-[15px] text-center tracking-normal">
-                <div className="text-[#3c3c3c] uppercase tracking-[5px]">Limited Slot</div>
-                <div className="text-[#3c3c3c] uppercase tracking-[5px]">
-                  First Come First Serve
-                </div>
-              </div>
+              <div className="text-[calc(2.8vw)] md:text-[22px]">ROM**</div>
             </div>
             <div className="flex flex-col gap-5 w-fit items-center">
               <div className="text-[calc(2.3vw)] md:text-[16px]">6:00 PM</div>
@@ -61,6 +55,9 @@ export default function Agenda() {
               />
               <div className="text-[calc(2.8vw)] md:text-[22px]">DINNER</div>
             </div>
+          </div>
+          <div className="text-[calc(2.1vw)] md:text-[15px] text-center tracking-[5px] pt-[calc(2vw)] md:pt-[20px] text-[#5b5b5b]">
+            **Limited Slot. First Come First Serve.
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 "use client";
 
-import { catchy, inkfree, playlist } from "@/fonts";
+import { catchy, inkfree, moon, playlist } from "@/fonts";
 import { cn } from "@/lib/utils";
 import { IconCheck } from "@tabler/icons-react";
 import confetti from "canvas-confetti";
@@ -209,12 +209,12 @@ export default function RSVP() {
           <div className="relative left-0 w-full h-full flex flex-col items-center text-[#717171]">
             <div
               className={cn(
-                "text-[calc(4vw)] md:text-[35px] text-center tracking-[calc(2.4vw)] md:tracking-[15px] pb-[calc(10vw)] md:pb-[20px] pt-[calc(12vw)] md:pt-[80px]",
+                "text-[calc(4.5vw)] md:text-[35px] text-center tracking-[calc(2.4vw)] md:tracking-[15px] pb-[calc(10vw)] md:pb-[20px] pt-[calc(15vw)] md:pt-[100px]",
                 playlist.className
               )}
             >
               RSVP
-              <div className="text-[calc(1.8vw)] pt-[calc(1.5vw)] tracking-[calc(1.5vw)] md:text-[12px] md:pt-[10px] md:tracking-[12px] pb-[calc(1vw)] md:pb-[45px]">
+              <div className={cn("text-[calc(2vw)]  pt-[calc(1.5vw)] tracking-[calc(1.5vw)] md:text-[14px] md:pt-[10px] md:tracking-[12px] pb-[calc(1vw)] md:pb-[45px]", catchy.className)}>
                 BY 30 SEPTEMBER, 2025
               </div>
             </div>

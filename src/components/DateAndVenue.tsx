@@ -19,7 +19,7 @@ export default function DateAndVenue() {
           </div>
           <div className="flex gap-2">
             <div>AT </div>
-            <div>5</div>
+            <div>7</div>
             <div>PM</div>
           </div>
         </div>
