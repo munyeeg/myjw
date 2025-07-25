@@ -107,6 +107,7 @@ export default function RSVP() {
       setIsAttending(existingRsvp.attending === "TRUE");
       setNumberOfGuests(existingRsvp.numberOfGuests);
       setContactNumber(existingRsvp.phone);
+      setIsAttendingRom(existingRsvp.rom === "TRUE");
     }
   }, [existingRsvp]);
 
