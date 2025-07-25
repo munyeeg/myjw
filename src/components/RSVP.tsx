@@ -1,8 +1,10 @@
+/* eslint-disable */
+
 "use client";
 
-import { alex, catchy, inkfree, moon, playlist } from "@/fonts";
+import { catchy, inkfree, playlist } from "@/fonts";
 import { cn } from "@/lib/utils";
-import { IconArrowRight, IconCheck } from "@tabler/icons-react";
+import { IconCheck } from "@tabler/icons-react";
 import confetti from "canvas-confetti";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,7 +12,6 @@ import { useEffect, useState } from "react";
 import _ from "lodash";
 import { v4 as uuidv4 } from "uuid";
 import { getCookie, setCookie } from "cookies-next";
-import Link from "next/link";
 
 export default function RSVP() {
   const rsvpId = getCookie("rsvpId");
@@ -264,7 +265,7 @@ export default function RSVP() {
                       </div>
                     </div>
                   </div>
-                  <div
+                  {/* <div
                     className={cn(
                       "text-[calc(4vw)] md:text-[20px] text-[#5f5f5f] flex flex-col items-center gap-2 pt-[calc(7vw)] md:pt-[50px]",
                       inkfree.className
@@ -346,7 +347,7 @@ export default function RSVP() {
                         }}
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               ) : (
                 <>
@@ -360,7 +361,7 @@ export default function RSVP() {
                         value={name}
                         type="text"
                         placeholder=""
-                        onChange={(e: any) => {
+                        onChange={(e) => {
                           setName(e.currentTarget.value);
                         }}
                       />

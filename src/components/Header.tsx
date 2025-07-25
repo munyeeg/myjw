@@ -1,26 +1,11 @@
 "use client";
 
 import React from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import { useMediaQuery } from "use-media-query-react";
 import { cn } from "@/lib/utils";
-import { alex, catchy, inkfree } from "@/fonts";
+import { inkfree } from "@/fonts";
 
 export default function Header() {
-  const [emblaRef] = useEmblaCarousel(
-    { loop: true, align: "center", watchSlides: false },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
-
-  const slides = [
-    "/background.jpg",
-    "/background-2.jpg",
-    "/background-3.jpg",
-    "/background-4.jpg",
-  ];
-
   return (
     <div suppressHydrationWarning className={cn("relative overflow-hidden")}>
       {/* <div className="embla z-9" ref={emblaRef}>
