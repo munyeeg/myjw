@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { inkfree } from "@/fonts";
+import { hastag, inkfree } from "@/fonts";
 
 export default function Header() {
   return (
@@ -28,6 +28,16 @@ export default function Header() {
           className={cn("object-cover object-top select-none h-full w-full")}
         />
       </div>
+      <div
+        className={cn(
+          "absolute top-[calc(3vw)] right-[calc(8vw)] md:top-[20px] md:right-[50px] w-fit z-10 text-[#ede4da] text-[calc(4vw)] md:text-[30px] flex",
+          hastag.className
+        )}
+      >
+        良<div className="text-white">陈</div>美景 幸福
+        <div className="text-white">杨</div>溢
+      </div>
+
       {/* <div className="absolute bottom-[-2px] left-0 w-full z-10">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path

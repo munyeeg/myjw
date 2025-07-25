@@ -1,4 +1,4 @@
-import { catchy, playlist } from "@/fonts";
+import { catchy, name } from "@/fonts";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -7,11 +7,11 @@ export default function Agenda() {
     <div className="p-8 py-[calc(10vw)] md:p-10 md:py-[80px] !pb-[calc(6vw)] md:!pb-[50px]">
       <div
         className={cn(
-          "text-[calc(4vw)] md:text-[35px] text-center text-[#585858] tracking-[calc(2.4vw)] md:tracking-[15px] pb-[calc(3vw)] md:pb-[20px]",
-          playlist.className
+          "text-[calc(4vw)] md:text-[35px] text-center text-black tracking-[calc(2.4vw)] md:tracking-[15px] pb-[calc(3vw)] md:pb-[20px]",
+          name.className
         )}
       >
-        TIMELINE
+        Timeline
       </div>
       <div className="pt-[calc(8vw)] md:pt-[50px]">
         <div
@@ -57,7 +57,7 @@ export default function Agenda() {
             </div>
           </div>
           <div className="text-[calc(2.1vw)] md:text-[15px] text-center tracking-[calc(0.8vw)] md:tracking-[5px] pt-[calc(2vw)] md:pt-[20px] text-[#5b5b5b]">
-            **Limited Seat. First Come First Serve.
+            **Limited Seats. First Come First Serve.
           </div>
         </div>
       </div>

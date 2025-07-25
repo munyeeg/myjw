@@ -59,3 +59,13 @@ export const inkfree = localFont({
     },
   ],
 });
+
+export const hastag = localFont({
+  src: [
+    {
+      path: "./hashtag.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
