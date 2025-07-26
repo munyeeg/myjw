@@ -2,6 +2,7 @@
 
 import Agenda from "@/components/Agenda";
 import ContentBackground from "@/components/ContentBackground";
+import ContentBackgroundMore from "@/components/ContentBackgroundMore";
 import DateAndVenue from "@/components/DateAndVenue";
 import Flower from "@/components/Flower";
 import Header from "@/components/Header";
@@ -17,11 +18,15 @@ export default function Home() {
           <Header />
           <Name />
           <Flower />
-          <div className="flex flex-col gap-4 relative z-12">
+          <div className="flex flex-col gap-4 relative z-12 pb-10">
             <DateAndVenue />
-            <Agenda />
-            <RSVP />
           </div>
+        </div>
+
+        <div className="md:max-w-[700px] overflow-hidden rounded-lg shadow-md relative font-poppins font-light mt-3 w-full">
+          <ContentBackgroundMore />
+          <Agenda />
+          <RSVP />
         </div>
       </div>
     </div>

@@ -215,11 +215,11 @@ export default function RSVP() {
           <div className="relative left-0 w-full h-full flex flex-col items-center text-[#717171]">
             <div
               className={cn(
-                "text-[calc(4.5vw)] md:text-[35px] text-center tracking-[calc(2.4vw)] md:tracking-[15px] pb-[calc(10vw)] md:pb-[20px] pt-[calc(15vw)] md:pt-[100px] text-black",
+                "text-[calc(7vw)] md:text-[50px] text-center text-black tracking-[calc(1.5vw)] md:tracking-[7px] pb-[calc(10vw)] md:pb-[20px] pt-[calc(14vw)] md:pt-[90px]",
                 NameFont.className
               )}
             >
-              Rsvp
+              R.S.V.P
               <div
                 className={cn(
                   "text-[calc(2vw)]  pt-[calc(1.5vw)] tracking-[calc(1.5vw)] md:text-[14px] md:pt-[10px] md:tracking-[12px] pb-[calc(1vw)] md:pb-[45px]",
