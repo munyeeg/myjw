@@ -219,7 +219,7 @@ export default function RSVP() {
                 NameFont.className
               )}
             >
-              R.S.V.P
+              RSVP
               <div
                 className={cn(
                   "text-[calc(2vw)]  pt-[calc(1.5vw)] tracking-[calc(1.5vw)] md:text-[14px] md:pt-[10px] md:tracking-[12px] pb-[calc(1vw)] md:pb-[45px]",

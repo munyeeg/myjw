@@ -64,7 +64,7 @@ export default function Header() {
           />
           <div
             className={cn(
-              "absolute left-[58%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-white w-full text-center rotate-[-4deg] text-[calc(3vw)] md:text-[25px]",
+              "absolute left-[58%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-white w-full text-center rotate-[-6deg] text-[calc(3.2vw)] md:text-[23px] tracking-[calc(0.5vw)] md:tracking-[3px]",
               inkfree.className
             )}
           >

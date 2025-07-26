@@ -5,15 +5,15 @@ export default function DateAndVenue() {
     <div className="flex justify-end">
       <div
         className={cn(
-          "flex flex-col gap-2 mt-[calc(24vw)] md:mt-[160px] mr-[calc(3vw)] md:mr-[45px] text-[calc(2vw)] md:text-[15px] text-center tracking-[calc(0.9vw)] md:tracking-[5px]",
+          "flex flex-col gap-2 mt-[calc(24vw)] md:mt-[160px] mr-[calc(6.5vw)] md:mr-[45px] text-[calc(2.3vw)] md:text-[15px] text-center tracking-[calc(0.6vw)] md:tracking-[5px]",
           catchy.className
         )}
       >
         <div>NOVEMBER</div>
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-[calc(4vw)] md:gap-6 items-center tracking-[calc(0.8vw)] md:tracking-[5px]">
           <div>SATURDAY</div>
           <div
-            className={cn("text-[calc(5vw)] md:text-[40px]", alex.className)}
+            className={cn("text-[calc(5vw)] md:text-[45px]", alex.className)}
           >
             15
           </div>
