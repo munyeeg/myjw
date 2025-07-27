@@ -57,27 +57,34 @@ export default function RSVP() {
   };
 
   const showConfetti = () => {
-    const end = Date.now() + 3 * 1000; // 3 seconds
-    const colors = ["#E6C880", "#E0A67B", "#B49256", "#E1E4E7"];
+    const end = Date.now() + 1 * 1000; // 3 seconds
+    const colors = ["#F55583", "#00DEFF", "#00B580", "#FFD13B"];
+    const shape = confetti.shapeFromPath({
+      path: "M3.71431076,0 L16.5143108,0 C16.5143108,0 12.3968413,10.5894765 12.3968413,16 C12.3968413,21.4105235 16.5143108,32 16.5143108,32 L3.71431076,32 C3.71431076,32 0.448890145,21.3975151 0.448890145,16 C0.448890145,10.6024849 3.71431076,0 3.71431076,0 Z",
+    });
 
     const frame = () => {
       if (Date.now() > end) return;
 
       confetti({
-        particleCount: 3,
+        particleCount: 4,
         angle: 60,
-        spread: 55,
+        spread: 45,
         startVelocity: 60,
         origin: { x: 0, y: 0.7 },
         colors: colors,
+        shapes: [shape],
+        scalar: 1.5,
       });
       confetti({
-        particleCount: 3,
+        particleCount: 4,
         angle: 120,
-        spread: 55,
+        spread: 45,
         startVelocity: 60,
         origin: { x: 1, y: 0.7 },
         colors: colors,
+        shapes: [shape],
+        scalar: 1.5,
       });
 
       requestAnimationFrame(frame);
