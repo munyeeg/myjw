@@ -233,7 +233,7 @@ export default function RSVP() {
                   catchy.className
                 )}
               >
-                BY 30 SEPTEMBER, 2025
+                BY 31 AUGUST, 2025
               </div>
             </div>
             <>
@@ -249,14 +249,13 @@ export default function RSVP() {
                       inkfree.className
                     )}
                   >
-                    <div className="text-[#808080] uppercase">
+                    <div className="text-[#7B6853] uppercase font-bold">
                       {isAttending ? "See you there!" : "We'll miss you!"}
                     </div>
                     <div className="flex items-center gap-2 px-[calc(1vw)] md:px-[10px] w-fit">
                       <div
                         className={cn(
-                          "text-[#7B6853] text-center text-[calc(4vw)] md:text-[30px] pt-[calc(1vw)] md:pt-[10px]",
-                          catchy.className
+                          "text-[#7B6853] text-center pt-[calc(1vw)] md:pt-[10px] font-bold"
                         )}
                       >
                         {existingRsvp.name.toUpperCase()}
