@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { hastag, inkfree } from "@/fonts";
-import Skeleton from "react-loading-skeleton";
 
 export default function Header() {
   return (
