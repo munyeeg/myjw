@@ -1,33 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { hastag, inkfree } from "@/fonts";
+import Skeleton from "react-loading-skeleton";
 
 export default function Header() {
   return (
     <div suppressHydrationWarning className={cn("relative overflow-hidden")}>
-      {/* <div className="embla z-9" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((slide, index) => (
-            <div className="embla__slide" key={index}>
-              <div className="max-h-[550px] overflow-hidden">
-                <Image src={slide} alt="header" width={1000} height={1000} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden md:min-w-[700px] aspect-[2542/1739]">
         <Image
           src="/background-4.jpg"
           alt="header"
           width={2542}
           height={1739}
-          className={cn("object-cover object-top select-none h-full w-full")}
+          className={cn("object-cover object-top select-none")}
         />
       </div>
+
       <div
         className={cn(
           "absolute top-[calc(3vw)] right-[calc(8vw)] md:top-[20px] md:right-[50px] w-fit z-10 text-[#ede4da] text-[calc(4vw)] md:text-[30px] flex",
