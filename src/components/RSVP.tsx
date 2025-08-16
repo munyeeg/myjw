@@ -233,7 +233,7 @@ export default function RSVP() {
                   catchy.className
                 )}
               >
-                BY 31 AUGUST, 2025
+                BY 20 SEPTEMBER, 2025
               </div>
             </div>
             <>
